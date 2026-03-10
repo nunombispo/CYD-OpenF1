@@ -19,16 +19,19 @@ Data is built from OpenF1’s **sessions**, **drivers**, **laps**, **position**,
 ## Run locally
 
 ```bash
+cd api
 python -m venv .venv
 .venv\Scripts\activate   # Windows
 # source .venv/bin/activate   # macOS/Linux
 pip install -r requirements.txt
-uvicorn main:app --reload
+uvicorn main:app --reload --host 0.0.0.0
 ```
 
 - API: http://127.0.0.1:8000
 - Docs: http://127.0.0.1:8000/docs
 - Race status: http://127.0.0.1:8000/api/race-status
+
+Use `--host 0.0.0.0` so the CYD (or other devices on your LAN) can reach the API. Set `PITWALL_URL` on the CYD to `http://<this machine's LAN IP>:8000/api/race-status`.
 
 ## Requirements
 

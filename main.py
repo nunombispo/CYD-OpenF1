@@ -15,8 +15,8 @@ import time
 import cyd
 
 # ── CONFIG ────────────────────────────────────────────────
-WIFI_SSID     = "H369ABF75E6"
-WIFI_PASSWORD = "C79FA965F262"
+WIFI_SSID     = "XXXXXXXXXXXX"
+WIFI_PASSWORD = "XXXXXXXXXXXX"
 MY_DRIVER     = "NOR"          # 3-letter code to highlight
 POLL_INTERVAL = 30             # seconds between OpenF1 polls
 
